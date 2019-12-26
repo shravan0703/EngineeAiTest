@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="15dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/switch_btn"
+            android:layout_marginEnd="10dp"> </TextView>
+
+        <TextView
+            android:id="@+id/created_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26Dec2019"
+            android:textSize="14sp"
+            android:layout_below="@+id/title_tv"
+            android:layout_marginTop="5dp"> </TextView>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"> </androidx.appcompat.widget.SwitchCompat>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
